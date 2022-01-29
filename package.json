@@ -1,0 +1,15 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "backend api/webservices for development projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "FitMeIn",
+    "Phobos"
+  ],
+  "author": "Matt Cole",
+  "license": "ISC"
+}
