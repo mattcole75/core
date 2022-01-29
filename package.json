@@ -1,15 +1,31 @@
 {
   "name": "core",
   "version": "1.0.0",
-  "description": "backend api/webservices for development projects",
+  "description": "A collection of webservices to authenticate users and support various applications",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "core": "node server.js & node static.js",
+    "test": "jest"
   },
   "keywords": [
     "FitMeIn",
     "Phobos"
   ],
   "author": "Matt Cole",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "convict": "^6.2.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "node-fetch": "^3.2.0",
+    "supertest": "^6.2.2"
+  }
 }
