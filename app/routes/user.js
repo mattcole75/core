@@ -72,12 +72,10 @@ module.exports = (app) => {
     app.post('/api/' + version + '/user/logout', (req, res) => {
 
         res.set('Content-Type', 'application/json');
-
         user.isAuthenticated(req, (err) => {
             if(err)
                 res.status(err.status).send(err);
             else {
-
                 user.logout(req, (err, auth) => {
                     if(err)
                         res.status(err.status).send(err);

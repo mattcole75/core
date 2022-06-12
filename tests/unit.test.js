@@ -180,7 +180,7 @@ describe('POST / Patch / DELETE user requests', () => {
         await endPoint.patch('/user/avatar')
             .set('content-type', 'multipart/form-data')
             .set({
-                idToken: idToken, 
+                idToken: idToken,
                 localId: localId
             })
             .attach('avatar', `${__dirname}/files/testA.jpg`)
@@ -1252,7 +1252,7 @@ describe('The FitMeIn test suite', () => {
                 appointmentDateTime: new Date(new Date().getTime()+(3*24*60*60*1000)).toJSON().slice(0, 19).replace('T', ' '),
                 duration: 20,
                 price: 10.95,
-                imageUrl: 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b23fe30414505.5621a05c3dfda.png'
+                imageUrl: 'https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/26222847_327336174440651_4236179458689597440_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=111&_nc_ohc=bNDdVkcY0YcAX83LcJ6&edm=AABBvjUBAAAA&ccb=7-4&oh=00_AT_3gJ0wQ0ol6XEPyOn7emHtr8KSkZsfD4AsJxLZAb9Dwg&oe=621F7F49&_nc_sid=83d603'
             })
             .set('Accept', 'application/json')
             .expect('Content-Type', /json/)
@@ -1274,7 +1274,7 @@ describe('The FitMeIn test suite', () => {
                 appointmentDateTime: new Date(new Date().getTime()+(13*24*60*60*1000)).toJSON().slice(0, 19).replace('T', ' '),
                 duration: 60,
                 price: 34.95,
-                imageUrl: 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b23fe30414505.5621a05c3dfda.png'
+                imageUrl: 'https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/26222847_327336174440651_4236179458689597440_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=111&_nc_ohc=bNDdVkcY0YcAX83LcJ6&edm=AABBvjUBAAAA&ccb=7-4&oh=00_AT_3gJ0wQ0ol6XEPyOn7emHtr8KSkZsfD4AsJxLZAb9Dwg&oe=621F7F49&_nc_sid=83d603'
             })
             .set('Accept', 'application/json')
             .expect('Content-Type', /json/)
@@ -1291,12 +1291,12 @@ describe('The FitMeIn test suite', () => {
             })
             .send({
                 ownerUserId: localId,
-                title: 'Ears and nose',
+                title: 'Two nights at Grand Hotel',
                 description: 'Sed ullamcorper, odio ut semper interdum, turpis turpis porttitor nisl, eu volutpat libero velit laoreet magna. Quisque sed auctor sem. Nam eleifend feugiat mauris, et eleifend sapien dignissim id. Integer eu leo eget nulla.',
                 appointmentDateTime: new Date(new Date().getTime()+(8*24*60*60*1000)).toJSON().slice(0, 19).replace('T', ' '),
                 duration: 5,
-                price: 9.95,
-                imageUrl: 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b23fe30414505.5621a05c3dfda.png'
+                price: 350,
+                imageUrl: 'https://www.countryhotelbreaks.com/db_library/down-hall/640x480_TBG6S_71962downhallhomepage-clean2.jpg'
             })
             .set('Accept', 'application/json')
             .expect('Content-Type', /json/)

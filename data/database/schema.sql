@@ -243,7 +243,7 @@ create table Spot (
     inBasketDateTime datetime null,
     inBasketUserId smallInt null,
     purchaseOrderId int null,
-    imageUrl varchar(256) not null,
+    imageUrl varchar(512) not null,
     created datetime not null default now(),
     updated datetime not null default now() on update now(),
     primary key (id),
